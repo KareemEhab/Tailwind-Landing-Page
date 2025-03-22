@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="items-center">
+    <div class="nav">
+      <div class="dark-mode-switch">
+        <!-- Sun -->
+        <svg
+          class="w-6 h-6 text-yellow-500"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+          ></path>
+        </svg>
+        <!-- Switch -->
+        <button class="btn">
+          <div class="switch"></div>
+        </button>
+        <!-- Moon -->
+        <svg
+          class="w-6 h-6 text-gray-400"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+          ></path>
+        </svg>
+      </div>
+
+      <!-- Hamburger Button for Responsive mobile screens -->
+      <button class="md:hidden" id="menuBtn">
+        <svg
+          class="w-6 h-6 dark:text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="hidden md:flex gap-11 md:gap-8" id="navItems">
+        <a class="nav-item" href="">Product</a>
+        <a class="nav-item" href="">Features</a>
+        <a class="nav-item" href="">Market Place</a>
+        <a class="nav-item" href="">Company</a>
+      </div>
+
+      <div class="hidden md:flex w-[10rem] justify-end pr-5">
+        <a class="nav-item" href="./login.html"> Login → </a>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-nav hidden" id="mobileMenu">
+        <a class="nav-item" href="">Product</a>
+        <a class="nav-item" href="">Market Place</a>
+        <a class="nav-item" href="">Features</a>
+        <a class="nav-item" href="">Company</a>
+        <a class="nav-item" href="./login.html"> Login → </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-announcment">
+        Announcing our next round of funding.
+        <a class="hero-link" href="">
+          Read more
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <h1 class="hero-header">Data to enrich your online business</h1>
+
+      <p class="hero-details">
+        Anim aute id manga aliqua ad ad non deserunt sunt. Qui irure qui lorem
+        cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+      </p>
+
+      <div class="flex items-center gap-8">
+        <button class="hero-btn">Get started</button>
+        <a class="hero-learn-more" href=""> Learn more → </a>
+      </div>
+    </div>
+
+    <!-- Deploy Header -->
+    <div class="deploy-header">
+      <p class="deploy-header-tag">Deploy faster</p>
+      <h2 class="deploy-header-heading">
+        Everything you need to deploy your app
+      </h2>
+      <p class="deploy-header-text">
+        Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+        Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In
+        mi viverra elit nunc.
+      </p>
+    </div>
+
+    <!-- Deploy Details -->
+    <div class="deploy-details">
+      <div class="flex items-start gap-4">
+        <div class="bg-[#5045E7] dark:bg-purple-300 p-2 rounded-lg">
+          <svg
+            class="size-6 text-white dark:text-black"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z"
+            />
+          </svg>
+        </div>
+        <div class="max-w-[22rem] flex flex-col gap-1">
+          <h3 class="font-medium dark:text-white">Push to deploy</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse
+            semper morbi. Odio urna massa nunc massa.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="bg-[#5045E7] dark:bg-purple-300 p-2 rounded-lg">
+          <svg
+            class="size-6 text-white dark:text-black"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"
+            />
+          </svg>
+        </div>
+        <div class="max-w-[22rem] flex flex-col gap-1">
+          <h3 class="font-medium dark:text-white">SSL Certificates</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget.
+            Sem sodales gravida quam turpis enim lacus amet.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="bg-[#5045E7] dark:bg-purple-300 p-2 rounded-lg">
+          <svg
+            class="size-6 text-white dark:text-black"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+            />
+          </svg>
+        </div>
+        <div class="max-w-[22rem] flex flex-col gap-1">
+          <h3 class="font-medium dark:text-white">Simple queues</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Quisque est vel vulputate cursus. Risus proin diam nunc commodo.
+            Lobortis auctor congue commodo diam neque.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="bg-[#5045E7] dark:bg-purple-300 p-2 rounded-lg">
+          <svg
+            class="size-6 text-white dark:text-black"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M7.864 4.243A7.5 7.5 0 0 1 19.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 0 0 4.5 10.5a7.464 7.464 0 0 1-1.15 3.993m1.989 3.559A11.209 11.209 0 0 0 8.25 10.5a3.75 3.75 0 1 1 7.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 0 1-3.6 9.75m6.633-4.596a18.666 18.666 0 0 1-2.485 5.33"
+            />
+          </svg>
+        </div>
+        <div class="max-w-[22rem] flex flex-col gap-1">
+          <h3 class="font-medium dark:text-white">Advanced security</h3>
+          <p class="text-gray-600 dark:text-gray-300">
+            Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis
+            aliquet hac quis. Id hac maecenas ac donec pharetra eget.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="deploy-header">
+      <h2 class="deploy-header-heading">Simple no-tricks pricing</h2>
+      <p class="deploy-header-text">
+        Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi
+        iusto modi velit ut non voluptas in. Explicabo id ut laborum
+      </p>
+    </div>
+
+    <!-- Pricing -->
+    <div class="pricing">
+      <!-- Membership details -->
+      <div class="pricing-membership-details">
+        <h3 class="text-2xl font-bold dark:text-white">Lifetime membership</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          Lorem ipsum dolor sit amet consect etur adipisicing elit. Itaque amet
+          indis perferendis blanditiis repellendus etur quidem assumenda.
+        </p>
+        <!-- What's included -->
+        <div class="mt-[4rem] flex flex-col gap-[1rem]">
+          <h3 class="text-lg font-medium text-[#5045E7] dark:text-purple-300">
+            What's included
+          </h3>
+          <div
+            class="mt-4 flex flex-col lg:flex-row flex-wrap gap-x-[5rem] gap-y-[2rem]"
+          >
+            <div class="pricing-info">
+              <svg
+                class="w-5 h-5 text-purple-600 dark:text-purple-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="dark:text-white">Private forum access</span>
+            </div>
+            <div class="pricing-info">
+              <svg
+                class="w-5 h-5 text-purple-600 dark:text-purple-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="dark:text-white">Member resources</span>
+            </div>
+            <div class="pricing-info">
+              <svg
+                class="w-5 h-5 text-purple-600 dark:text-purple-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="dark:text-white">Entry to annual conference</span>
+            </div>
+            <div class="pricing-info">
+              <svg
+                class="w-5 h-5 text-purple-600 dark:text-purple-300"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="dark:text-white">Official member t-shirt</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Price -->
+      <div
+        class="w-full lg:max-w-[35%] bg-[#F9FAFC] dark:bg-gray-900 rounded-lg flex flex-col justify-center items-center gap-[2rem] p-[5rem]"
+      >
+        <p class="text-md font-medium text-gray-500 dark:text-gray-400">
+          Pay once, own it forever
+        </p>
+        <div class="text-5xl font-bold dark:text-white">
+          $349 <span class="text-lg font-medium text-gray-500">USD</span>
+        </div>
+        <button class="pricing-btn">Get access</button>
+        <p class="mt-4 text-sm text-gray-500 dark:text-gray-400 text-center">
+          Invoices and receipts available for easy company reimbursement
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <h1 class="text-4xl font-bold mb-4">Work with us</h1>
+      <p class="text-gray-300 max-w-[40rem] mb-8">
+        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+        cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+      </p>
+      <!-- Links -->
+      <div class="flex flex-col lg:flex-row gap-8 mb-16">
+        <a class="footer-link" href=""> Open roles → </a>
+        <a class="footer-link" href=""> Internship program → </a>
+        <a class="footer-link" href=""> Our values → </a>
+        <a class="footer-link" href=""> Meet our leadership → </a>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-[2rem] lg:gap-[10rem]">
+        <div class="flex flex-col">
+          <h4 class="footer-h4">12</h4>
+          <p class="text-gray-300">Offices worldwide</p>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="footer-h4">300+</h4>
+          <p class="text-gray-300">Full-time colleagues</p>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="footer-h4">40</h4>
+          <p class="text-gray-300">Hours per week</p>
+        </div>
+        <div class="flex flex-col">
+          <h4 class="footer-h4">Unlimited</h4>
+          <p class="text-gray-300">Paid time off</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Dark mode toggle
+      document.querySelector(".btn").addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+      });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+      });
+    </script>
+  </body>
+</html>
